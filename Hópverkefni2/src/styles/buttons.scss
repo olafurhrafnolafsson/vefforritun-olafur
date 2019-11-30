@@ -1,0 +1,33 @@
+@import 'config';
+
+.sort {
+  text-align: center;
+  background-color: $color-white;
+
+  .Button {
+    padding: $gutter/2 $gutter;
+    margin: 0 $gutter $gutter;
+    font-family: $font-title;
+    font-size: $font-size-medium;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: $color-gray-light;
+    border: 0;
+    border-radius: 1rem;
+    transition: background-color $AnimationSpeed $AnimationStyle;
+
+    &:hover {
+      background-color: $color-gray-dark;
+    }
+
+  }
+
+  .selected {
+    background-color: $color-green-light;
+    transition: background-color $AnimationSpeed $AnimationStyle;
+
+    &:hover {
+      background-color: $color-green-dark;
+    }
+  }
+}
